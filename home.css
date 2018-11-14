@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  height: 8vh;
+  font-size: 2rem;
+  text-decoration: none;
+  align-items: center;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.container li{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  cursor: pointer;
+}
+
+/*------------Hero Banner-----------*/
+.homeItem{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.heroBanner{
+  background-image: url("./overView.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center-center;
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro{
+  display: flex;
+  height: 15vh;
+  background-color: gray;
+  opacity: 0.5;
+  color: #780099;
+}
+/*------------End Hero-banner---------*/
+
+/*--=---------Start overView-------------*/
+
+.overView{
+  height: 100vh;
+  width: 100%;
+  background-image: url('./sand_gray.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+}
+.overViewSection{
+  margin: 0;
+  width: 60%;
+  color: lightGray;
+}
+
+/*---------End OverView----------*/
+
+/*---------Start PictureTabs-----------*/
+.pictureTabs{
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+.pictureTabs img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*---------End PictureTabs----------*/
