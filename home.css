@@ -27,7 +27,6 @@ body{
 
 /*------------Hero Banner-----------*/
 .homeItem{
-  height: 100vh;
   width: 100%;
   margin: 0;
 }
@@ -79,6 +78,84 @@ body{
 .pictureTabs{
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.pictureContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.pictureContainer img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  font-size: 10vh;
+  color: gray;
+  word-wrap: normal;
+}
+.text{
+  color: white;
+  font-size: 8vh;
+  opacity: 1;
+}
+.pictureAbout:hover .aboutOverlay{
+  opacity: 0.7;
+}
+.pictureLocation:hover .locationOverlay{
+  opacity: 0.7;
+}
+.pictureAccommodations:hover .accommodationsOverlay{
+  opacity: 0.7;
+}
+.pictureAmenities:hover .amenitiesOverlay{
+  opacity: 0.7;
+}
+
+
+/*.pictureContainer{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+#pictureAbout{
+  background-image: url('./mainHouse.jpg');
+}
+
+#pictureLocation{
+  background-image: url('./haleakala_crater.jpg');
+}
+#pictureAccommodations{
+  background-image: url('./concierge.jpg');
+}
+#pictureAmenities{
+  background-image: url('./pool.jpg');
+}
+
+/*------Before major edits css---------
+.pictureTabs{
+  display: flex;
+  flex-direction: column;
   background-color: blue;
 }
 .pictureTabs img{
@@ -87,4 +164,5 @@ body{
   margin: 0;
   padding: 0;
 }
+*/
 /*---------End PictureTabs----------*/
