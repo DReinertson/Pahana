@@ -45,9 +45,8 @@ body{
 .intro{
   display: flex;
   height: 15vh;
-  background-color: gray;
-  opacity: 0.5;
-  color: #780099;
+  opacity: 0.4;
+  color: #B27000;
 }
 /*------------End Hero-banner---------*/
 
@@ -100,31 +99,32 @@ body{
   bottom: 0;
   right: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
   opacity: 0;
+  width: 100%;
   transition: .5s ease;
   background-color: black;
-  font-size: 10vh;
   color: gray;
   word-wrap: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.trigger{
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
 }
 .text{
   color: white;
-  font-size: 8vh;
+  font-size: 5vh;
   opacity: 1;
-}
-.pictureAbout:hover .aboutOverlay{
-  opacity: 0.7;
-}
-.pictureLocation:hover .locationOverlay{
-  opacity: 0.7;
-}
-.pictureAccommodations:hover .accommodationsOverlay{
-  opacity: 0.7;
-}
-.pictureAmenities:hover .amenitiesOverlay{
-  opacity: 0.7;
+  width: 75%;
 }
 
 
