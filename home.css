@@ -4,10 +4,14 @@ body{
   flex-direction: column;
   width: 100%;
 }
+
+a{
+  text-decoration: none;
+}
 .container {
   display: flex;
   justify-content: space-around;
-  background-color: black;
+  background-image: url('./images/sand_gray.png');
   color: white;
   height: 8vh;
   font-size: 2rem;
@@ -32,7 +36,7 @@ body{
 }
 
 .heroBanner{
-  background-image: url("./overView.jpg");
+  background-image: url("./images/overView.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center-center;
@@ -40,13 +44,16 @@ body{
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+
 }
 
 .intro{
   display: flex;
   height: 15vh;
-  opacity: 0.4;
+  opacity: 0.7;
   color: #B27000;
+  font-size: 4vw;
 }
 /*------------End Hero-banner---------*/
 
@@ -55,7 +62,7 @@ body{
 .overView{
   height: 100vh;
   width: 100%;
-  background-image: url('./sand_gray.png');
+  background-image: url('./images/sand_gray.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -83,7 +90,7 @@ body{
 .pictureContainer{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -125,44 +132,69 @@ body{
   font-size: 5vh;
   opacity: 1;
   width: 75%;
-}
-
-
-/*.pictureContainer{
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  cursor: pointer;
+  height: 40%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#pictureAbout{
-  background-image: url('./mainHouse.jpg');
-}
-
-#pictureLocation{
-  background-image: url('./haleakala_crater.jpg');
-}
-#pictureAccommodations{
-  background-image: url('./concierge.jpg');
-}
-#pictureAmenities{
-  background-image: url('./pool.jpg');
+.text a{
+  text-decoration: none;
+  color: inherit;
 }
 
-/*------Before major edits css---------
-.pictureTabs{
+
+/*---------End PictureTabs----------*/
+
+/*---------Footer---------*/
+.footer{
+  display: flex;
+  background-image: url('./images/sand_gray.png');
+  justify-content: space-between;
+}
+.footerItem{
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  color: white;
+  align-items: flex-start;
 }
-.pictureTabs img{
-  width: 100%;
-  height: 100%;
-  margin: 0;
+.footerTabs{
+  width: 20%;
+}
+.footerTabs ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: auto;
   padding: 0;
+  text-align: center;
 }
-*/
-/*---------End PictureTabs----------*/
+.footerTabs li{
+  padding-bottom: 3%;
+}
+.footerItem a{
+  color:white;
+}
+
+.leadMagnet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 2;
+  width: 50%;
+}
+
+.socialMedia{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialMedia .fa{
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-size: 2rem;
+}
