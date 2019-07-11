@@ -1,0 +1,26 @@
+.heroBanner{
+  background-image: url('./images/location/hookipa.jpg');
+  background-size: cover;
+}
+
+.locationIntro{
+  padding: 3% 0;
+}
+
+.locationIntro h1, .locationIntro p{
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1% 0;
+  position: relative;
+}
+
+.locationIntro h1:after{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.25px solid white;
+}

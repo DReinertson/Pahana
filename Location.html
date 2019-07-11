@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './location.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = 'icon' href = '../images/logoSmall.png'>
+
+</head>
+
+<body>
+  <ul class = 'nav' id = 'nav'>
+    <li href = "home" class = 'navbar-item home underline' id = 'home'>Home</li>
+    <li href = "about" class = 'navbar-item about underline' id = 'home'>About</li>
+    <li href = "location" class = 'navbar-item location underline current' id = 'locations'>Location</li>
+    <li href = "accommodations" class = 'navbar-item accommodations underline' id = 'accommodations'>Accommodations</li>
+    <!--<li href = "#" class = 'navbar-item Book' id = 'Book A Room'>Book A Room</li>-->
+  </ul>
+  <img class = 'logo' src = './images/logoSmall.png' alt = 'logo'>
+  <!-- <div class = 'bookFixed' id = 'bookFixed'>
+    <a href = "#">Book Now</a>
+    <img src = './images/bookImage.png'>
+  </div> -->
+
+
+  <div class = 'heroBanner parallax' id = 'heroBanner'></div>
+
+  <div class = 'locationIntro'>
+    <h1>The surrounding area</h1>
+    <p>Pahana is located on the northeast shore of Maui. We recommend having a car to access all that Maui has to offer. Located on the road to hana, you're a short drive away from quaint little towns, amazing beaches and one of the most beautiful (and scary) drives you'll ever encounter.</p>
+    <p>Each town brings their own little spice to the adventure with their incredible food and drink. Ranging from crispy duck fajitas at Mambo's to upscale food with a view at Mama's Fish House, you'll be sure to leave with a full stomach.</p>
+    <p>Maui is also home to a few breweries and wineries. Kona brewing is set in a perfect space with plenty of room and games, equipped with food trucks coming in and out. Up country contains the wineries that will have you wanting more tastings and maybe even take a couple bottles home with you!</p>
+  </div>
+
+
+  <div class = 'discoverImageContainer'>
+
+    <div class = 'discoverItem discoverHaleakala image discoverImage' id = 'haleakala'>
+      <a href = 'https://www.nps.gov/hale/index.htm' target = '_blank'><img class = 'haleakala' src = './images/location/haleakala_crater.jpg'>
+        <div class = 'overlay haleakalaOverlay' id = 'haleakalaOverlay'>
+          Haleakala National Park
+          <br>
+          Makawao
+        </div>
+        <p class = 'caption'>Haleakala National Park | Makawao</p>
+      </a>
+    </div>
+
+    <div class = 'discoverItem discoverHanaHwy image discoverImage' id = 'HanaHwy'>
+      <a href = 'Hana_Highway' target = '_blank'><img class = 'hanaHwy' src = './images/location/waterfallStock.jpg'>
+        <div class = 'overlay hanaHwyOverlay' id = 'hanaHwyOverlay'>
+          The Road to Hana
+          <br>
+          Hana Hwy
+        </div>
+        <p class = 'caption'>The Road to Hana | Hana Hwy</p>
+      </a>
+    </div>
+
+
+    <div class = 'discoverItem discoverBamboo image discoverImage' id = 'bamboo'>
+      <a href = 'Bamboo_Forest' target = '_blank'><img class = 'bamboo' src = './images/location/bamboo.jpg'>
+        <div class = 'overlay bambooOverlay' id = 'bambooOverlay'>
+          Bamboo Forest (Na’ili’ili Haele)
+          <br>
+          Hana Hwy
+        </div>
+        <p class = 'caption'>Bamboo Forest (Na’ili’ili Haele) | Hana Hwy</p>
+      </a>
+    </div>
+
+
+    <div class = 'discoverItem discoverRedSand image discoverImage' id = 'redSand'>
+      <a href = 'Kaihalulu_Beach' target = '_blank'><img class = 'redSand' src = './images/location/redSand(patrick shyu).jpg'>
+        <div class = 'overlay redSandOverlay' id = 'redSandOverlay'>
+          Koki Beach Park (Kaihalulu Beach)
+          <br>
+          Hana
+        </div>
+        <p class = 'caption'>Koki Beach Park (Kaihalulu Beach) | Hana</p>
+      </a>
+    </div>
+
+    <div class = 'discoverItem discoverHana image discoverImage' id = 'hana'>
+      <a href = 'Hana' target = '_blank'><img class = 'hana' src = './images/location/Hana.jpg'>
+        <div class = 'overlay hanaOverlay' id = 'hanaOverlay'>
+          They City of Hana
+          <br>
+          Hana
+        </div>
+        <p class = 'caption'>The City of Hana | Hana</p>
+      </a>
+    </div>
+
+    <div class = 'discoverItem discoverHookipa image discoverImage' id = 'hana'>
+      <a href = 'Hookipa_Beach' target = '_blank'><img class = 'hookipa' src = './images/location/turtle.jpg'>
+        <div class = 'overlay hookipaOverlay' id = 'hookipaOverlay'>
+          Ho‘okipa Beach
+          <br>
+          Haiku
+        </div>
+        <p class = 'caption'>Ho‘okipa Beach | Haiku</p>
+      </a>
+    </div>
+
+    <div class = 'discoverItem discoverPaia image discoverImage' id = 'paia'>
+      <a href = 'Paia' target = '_blank'><img class = 'paia' src = './images/location/paia.jpg'>
+        <div class = 'overlay hookipaOverlay' id = 'hookipaOverlay'>
+          Pa'ia
+        </div>
+        <p class = 'caption'>Pa'ia</p>
+      </a>
+    </div>
+
+    <div class = 'discoverItem discoverMakawao image discoverImage' id = 'makawao'>
+      <a href = 'Makawao' target = '_blank'><img class = 'makawao' src = './images/location/makawao.jpg'>
+        <div class = 'overlay makawaoOverlay' id = 'makawaoOverlay'>
+          Makawao
+        </div>
+        <p class = 'caption'>Makawao</p>
+      </a>
+    </div>
+
+    <div class = 'discoverItem discoverFood image discoverImage' id = 'food'>
+      <a href = 'Maui_Food' target = '_blank'><img class = 'food' src = './images/location/spam.jpg'>
+        <div class = 'overlay foodOverlay' id = 'foodOverlay'>
+          Amazing Food and Drink
+        </div>
+        <p class = 'caption'>Amazing Food Options</p>
+      </a>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "./home.js"></script>
+  </body>
+
+  </html>

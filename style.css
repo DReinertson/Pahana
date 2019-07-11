@@ -1,0 +1,362 @@
+body, html{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url('./images/sand_gray.jpg');
+}
+
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+p{
+  font-size: 1.2vw;
+}
+h1{
+  font-size: 3vw;
+}
+.parallax{
+  height: 90%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  color: white;
+  position: absolute;
+  background: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 100%;
+  font-size: 1.1vw;
+  font-weight: bold;
+  top: 1%;
+}
+
+.nav li{
+  width: auto;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.logo{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+/* .navbar-item:hover:after{
+  content: "";
+  background: orange;
+  border-bottom: 2px solid orange;
+  width: 10%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+.underline{
+  position: relative;
+}
+.underline:after{
+  content: "";
+  color: orange;
+  background-color: orange;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* transition: .2s ease-in; */
+}
+.underline:hover:after{
+  width: 100%;
+  right: 0;
+}
+.current:after{
+  content: "";
+  color: white;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*------------Hero Banner-----------*/
+.homeItem{
+  width: 100%;
+  color: white;
+}
+
+.heroBanner{
+  background-image: url("./images/location/overView.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90%;
+  width: 100%;
+
+}
+
+.intro{
+  display: flex;
+  height: 10vh;
+  opacity: 0.7;
+  color: #B27000;
+  font-size: 4vw;
+}
+
+/*-----------Overview Section---------*/
+.overView{
+  display: flex;
+  align-items: center;
+  padding: 5% 0;
+}
+.overViewSection{
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*-----------End Overview Section---------*/
+
+/*-----------Discover Section-----------*/
+.discoverContainer, .container{
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.discoverContainer h1, .container h1{
+  margin: 0 auto;
+  padding: 3% 0 3% 0;
+}
+.discoverHeader, .header{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: #54695A;
+}
+.discoverHeaderItem, .headerItem{
+  width: 50%;
+  padding: 5% 0;
+}
+.discoverHeaderItem h2, .discoverHeaderItem p, .headerItem h2, .headerItem p{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 2% 0;
+}
+.discoverHeaderItem h2:after, .headerItem h2:after, .itemText h2:after{
+  /* content: '';
+  bottom: 0;
+  height: 5px;
+  width: 50%;
+  border-bottom: 1px solid white; */
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.25px solid white;
+}
+.discoverLeft{
+}
+.discoverRight{
+  background: #696969;
+}
+.discoverHeaderItem h2{
+  /* border-bottom: 0.5px solid white; */
+}
+.discoverContainer p{
+  font-size: 1vw;
+}
+
+.discoverImageContainer{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+.discoverImage{
+  width: 33.3333%;
+  height: 26vw;
+  position: relative;
+}
+.discoverImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.overlay{
+  display: flex;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  opacity: 0;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.image:hover .overlay{
+  opacity: 0.8;
+  visibility: visible;
+}
+.overlay a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discoverItem p {
+  display: none;
+}
+
+/* .food{
+  object-fit: cover;
+  object-position: center;
+} */
+
+/*-----------End Discover Section-----------*/
+
+/*-----------Pahana Section-----------*/
+
+.pahanaImageContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pahanaContainer *{
+  margin: 0;
+  padding: 0;
+}
+.pahanaHeader{
+  padding: 3vw 0;
+  margin-bottom: 5%;
+}
+.containerItem{
+  display: flex;
+  height: 35vw;
+}
+.itemImage, .itemText{
+  width: 50%;
+  position: relative;
+}
+.itemImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.itemText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemText h2, .itemText p{
+  width: 75%;
+  margin-top: 5%;
+}
+.itemText h2:after{
+  width: 30%;
+}
+.bungalowImage img{
+  width: 60%;
+  height: 60%;
+}
+.poolHouse img{
+  width: 60%;
+  height: 60%;
+}
+.itemImage img{
+  width: 60%;
+  height: 60%;
+}
+.topLeft{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+}
+.bottomRight{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* opacity: 0.7; */
+}
+.topRight{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.8;
+}
+.bottomLeft{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*-----------Pahana Section-----------*/
+/*-----------CTA Section----------*/
+.CTA{
+  height: 10vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vw;
+  margin-top: 20vh;
+  background: #54695A;
+  color: white;
+}
+.CTA form{
+  display: flex;
+  flex-direction: column;
+}
+.CTA button{
+  padding: 0;
+  width: 5vw;
+}
+/*-----------End CTA Section----------*/
+/*-----------Footer-----------*/
+.footer{
+  height: 10vw;
+  height: 15vh;
+  background: #54695A;
+}
+/*-----------End Footer-----------*/
+/*-----------Add-on classes------------*/
+.front{
+  z-index: 5;
+}
+.back{
+  z-index: 1;
+}
+/*-----------End Add-on classes------------*/
