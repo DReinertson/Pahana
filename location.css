@@ -1,10 +1,22 @@
 .heroBanner{
-  background-image: url('./images/location/hookipa.jpg');
+  background-image: url('./images/location/turtleLarge.jpg');
   background-size: cover;
 }
 
 .locationIntro{
   padding: 3% 0;
+}
+
+.locationContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.locationContainer h1{
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 .locationIntro h1, .locationIntro p{
@@ -23,4 +35,9 @@
   bottom: 0;
   left: 0;
   border-bottom: 0.25px solid white;
+}
+
+.discoverImage{
+  width: 25vw;
+  height: 18vw;
 }

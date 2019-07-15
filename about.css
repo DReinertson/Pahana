@@ -1,0 +1,40 @@
+.heroBanner{
+}
+
+.aboutOwners{
+  width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.ownerItem{
+  width: 35vw;
+  color: white;
+
+}
+.ownerItem h1{
+  position: relative;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+}
+.ownerItem h1:after{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.25px solid white;
+}
+
+.ownerImage img{
+  width: 35vw;
+  height: 27vw;
+  object-fit: cover;
+  
+}
+
+.ownerText{
+  background: green;
+}

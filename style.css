@@ -249,11 +249,7 @@ h1{
 
 /*-----------Pahana Section-----------*/
 
-.pahanaImageContainer{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 .pahanaContainer *{
   margin: 0;
   padding: 0;
@@ -262,9 +258,18 @@ h1{
   padding: 3vw 0;
   margin-bottom: 5%;
 }
+
+.pahanaImageContainer{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  background: green;
+}
 .containerItem{
   display: flex;
-  height: 35vw;
+  height: 50vw;
 }
 .itemImage, .itemText{
   width: 50%;
@@ -321,6 +326,58 @@ h1{
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  /* width: 22.5vw; */
+  /* height: auto; */
+  font-size: 7vw;
+  user-select: none;
+  /* background: rgba(120,120,120,0.1); */
+  /* color: rgb(92,142,180); */
+}
+.prev:hover, .next:hover{
+  color: rgb(92,142,180);
+}
+.prev, .next{
+  /* bottom: -13.5%; */
+}
+.prev{
+  /* left: -5%; */
+  left: -7vw;
+}
+.next{
+  right: -7vw;
+  /* right: -5%; */
+}
+
+/* The dots/bullets/indicators */
+.dots{
+  display: flex;
+  position: absolute;
+  bottom: -5vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(92,142,180);
 }
 /*-----------Pahana Section-----------*/
 /*-----------CTA Section----------*/

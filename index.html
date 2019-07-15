@@ -217,7 +217,19 @@
     </div>
 
     <div class = 'pahanaImageContainer imageContainer'>
-      <div class = 'containerItem pahanaImage bungalow'>
+
+      <a class = 'prev' onclick = 'plusSlides(-1)'>&#10094;</a>
+      <a class = 'next' onclick = 'plusSlides(1)'>&#10095;</a>
+
+      <div class = 'dots'>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+      <div class = 'containerItem pahanaImage bungalow slide' id = 'slide'>
         <div class = 'itemImage pahanaItemImage bungalowImage'>
           <img class = 'topLeft front' src = './images/accommodations/bungalow.jpg'>
           <img class = 'bottomRight back' src = './images/accommodations/bungalow1.jpg'>
@@ -228,7 +240,7 @@
         </div>
       </div>
 
-      <div class = 'containerItem pahanaImage poolHouse'>
+      <div class = 'containerItem pahanaImage poolHouse slide' id = 'slide'>
         <div class = 'headerItem itemText pahanaItemText poolHouseText'>
           <h2>2 pool-side rooms</h2>
           <p>Text describing the poolhouses. Talk about the view it offers, the access to pool and hot-tub, and how many people it accommodates. Eqipped with outdoor shower and adjacent to washer/dryer This is a chance to talk about what makes this area special and why someone would want to stay here. Going to put in a little more text to see how much text I would need to make it look ok.</p>
@@ -239,7 +251,7 @@
         </div>
       </div>
 
-      <div class = 'containerItem pahanaImage poolHottub'>
+      <div class = 'containerItem pahanaImage poolHottub slide' id = 'slide'>
         <div class = 'itemImage pahanaItemImage poolHottubImage'>
           <img class = 'topLeft front' src = './images/accommodations/pool.jpg'>
           <img class = 'bottomRight back' src = './images/accommodations/poolOpposite.jpg'>
@@ -250,7 +262,7 @@
         </div>
       </div>
 
-      <div class = 'containerItem pahanaImage kitchen'>
+      <div class = 'containerItem pahanaImage kitchen slide' id = 'slide'>
         <div class = 'headerItem itemText pahanaItemText kitchenText'>
           <h2>Full Outdoor Kitchen</h2>
           <p>Length of the dining table and how many it seats. Fully equipped with stove, convenction and regular over, dish washer, coffee machine, fridge and freeze, drink fridge, board games, sound system. Sit here for family meals or just have a drink.</p>
@@ -261,7 +273,7 @@
         </div>
       </div>
 
-      <div class = 'containerItem pahanaImage garden'>
+      <div class = 'containerItem pahanaImage garden slide' id = 'slide'>
         <div class = 'itemImage pahanaItemImage gardenImage'>
           <img class = 'topLeft front' src = './images/lime.jpg'>
           <img class = 'bottomRight back' src = './images/coconuts.jpg'>
@@ -298,7 +310,7 @@
 
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src = "./home.js"></script>
+    <script src = "./script.js"></script>
   </body>
 
   </html>
