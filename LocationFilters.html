@@ -3,7 +3,7 @@
 
 <head>
   <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
-  <link rel = 'stylesheet' type = 'text/css' href = './location.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './locationFilters.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel = 'icon' href = '../images/logoSmall.png'>
@@ -34,12 +34,197 @@
     <p>Maui is also home to a few breweries and wineries. Maui brewing is set in a perfect space with plenty of room and games, equipped with food trucks coming in and out. Upcountry contains the wineries that will have you wanting more tastings and maybe even take a couple bottles home with you!</p>
   </div>
 
+  <div class = 'heroBanner parallax' id = 'heroSeparator'></div>
+
 
   <div class = 'discoverImageContainer'>
+    <div class = 'filters'>
+      <ul>
+        <li class = 'current underline' id = 'Explore'>Exploration & Activities</li>
+        <li class = 'underline' id = 'Cities'>Cities & Towns</li>
+        <li class = 'underline' id = 'Beaches'>Beaches</li>
+        <li class = 'underline' id = 'Food'>Food & Drink</li>
+      </ul>
+    </div>
 
-    <div class = 'activitiesContainer locationContainer'>
+    <!-- <div class = 'choiceTitle'>
+      <h1 id = 'choiceTitle'>Title</h1>
+    </div> -->
 
-      <h1>Exploration and Activites</h1>
+    <div class = 'choiceContainer' id = 'choiceExplore'>
+
+      <div class = 'choiceImages exploreImages'>
+        <!-- <img id = 'choice1' src = './images/location/haleakala_crater.jpg'>
+        <img id = 'choice2' src = './images/location/waterfallStock.jpg'>
+        <img id = 'choice3' src = './images/location/bamboo.jpg'>
+        <img id = 'choice4' src = './images/location/turtleLarge.jpg'> -->
+        <div class = 'discoverItem discoverHaleakala image discoverImage' id = 'haleakala'>
+          <img class = 'haleakala' src = './images/location/haleakala_crater.jpg' id = 'haleakalaImg'>
+          <div class = 'overlay haleakalaOverlay' id = 'haleakala'>
+            Haleakala National Park
+            <br>
+            Makawao
+          </div>
+          <p class = 'caption'>Haleakala National Park | Makawao</p>
+        </div>
+
+        <div class = 'discoverItem discoverHanaHwy image discoverImage' id = 'hanaHwy'>
+          <img class = 'hanaHwy' src = './images/location/waterfallStock.jpg' id = 'hanaHwyImg'>
+            <div class = 'overlay hanaHwyOverlay' id = 'hanaHwy'>
+              The Road to Hana
+              <br>
+              Hana Hwy
+            </div>
+            <p class = 'caption'>The Road to Hana | Hana Hwy</p>
+        </div>
+
+        <div class = 'discoverItem discoverBamboo image discoverImage' id = 'bamboo'>
+          <img class = 'bamboo' src = './images/location/bamboo.jpg' id = 'bambooImg'>
+            <div class = 'overlay bambooOverlay' id = 'bamboo'>
+              Bamboo Forest (Na’ili’ili Haele)
+              <br>
+              Hana Hwy
+            </div>
+            <p class = 'caption'>Bamboo Forest (Na’ili’ili Haele) | Hana Hwy</p>
+        </div>
+
+        <div class = 'discoverItem discoverPools image discoverImage' id = 'pools'>
+          <img class = 'pools' src = './images/location/sacredPools.jpg' id = 'poolsImg'>
+            <div class = 'overlay poolsOverlay' id = 'pools'>
+              Ohe'o Gulch and Seven Sacred Pools
+              <br>
+              Hana
+            </div>
+            <p class = 'caption'>Ohe'o Gulch and Seven Sacred Pools | Hana </p>
+        </div>
+
+
+      </div>
+
+      <div class = 'choiceText exploreText' id = 'choiceText'>
+        <!-- <img src = './images/location/bamboo.jpg' id = 'image'> -->
+        <div class = 'displayImage'>
+          <img src = '' id = 'image1'>
+          <!-- <img src = '' id = 'image2'> -->
+        </div>
+        <div class = 'text'>
+          <h1 id = 'header'>
+            Choice1 Title
+          </h1>
+          <p id = 'paragraph'>
+            Choice1 Text
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = 'choiceContainer' id = 'choiceCities'>
+
+      <div class = 'choiceImages citiesImages'>
+        <!-- <img id = 'choice1' src = './images/location/haleakala_crater.jpg'>
+        <img id = 'choice2' src = './images/location/waterfallStock.jpg'>
+        <img id = 'choice3' src = './images/location/bamboo.jpg'>
+        <img id = 'choice4' src = './images/location/turtleLarge.jpg'> -->
+        <div class = 'discoverItem discoverHana image discoverImage' id = 'hana'>
+          <img class = 'haleakala' src = './images/location/Hana.jpg' id = 'hanaImg'>
+          <div class = 'overlay haleakalaOverlay' id = 'hana'>
+            They City of Hana
+            <br>
+            Hana
+          </div>
+          <p class = 'caption'>The City of Hana | Hana</p>
+        </div>
+
+        <div class = 'discoverItem discoverPaia image discoverImage' id = 'paia'>
+          <img class = 'paia' src = './images/location/paia.jpg' id = 'paiaImg'>
+            <div class = 'overlay paiaOverlay' id = 'paia'>
+              Pa'ia
+            </div>
+            <p class = 'caption'>Pa'ia</p>
+        </div>
+
+        <div class = 'discoverItem discovermakawao image discoverImage' id = 'makawao'>
+          <img class = 'makawao' src = './images/location/makawao.jpg' id = 'makawaoImg'>
+            <div class = 'overlay makawaoOverlay' id = 'makawao'>
+              Makawao
+            </div>
+            <p class = 'caption'>Makawao</p>
+        </div>
+      </div>
+
+      <div class = 'choiceText citiesText' id = 'choiceText'>
+        <div class = 'displayImage'>
+          <img src = '' id = 'image1'>
+          <!-- <img src = '' id = 'image2'> -->
+        </div>
+        <div class = 'text'>
+          <h1 id = 'header'>
+            Choice1 Title
+          </h1>
+          <p id = 'paragraph'>
+            Choice1 Text
+          </p>
+        </div>
+      </div>
+  </div>
+
+    <!-- <div class = 'choiceContainer' id = 'choiceCities'>
+      <div class = 'choiceImages cityImages'>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+      </div>
+      <div class = 'choiceText cityText'>
+        <h1>
+          Title
+        </h1>
+        <p>
+          Section talking about the activity/food/drink/beach, etc
+        </p>
+      </div>
+    </div>
+
+    <div class = 'choiceContainer' id = 'choiceBeaches'>
+      <div class = 'choiceImages beachImages'>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+      </div>
+      <div class = 'choiceText beachText'>
+        <h1>
+          Title
+        </h1>
+        <p>
+          Section talking about the activity/food/drink/beach, etc
+        </p>
+      </div>
+    </div>
+
+    <div class = 'choiceContainer' id = 'choiceFood'>
+      <div class = 'choiceImages foodImages'>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+        <img id = 'choice1' src = ''>
+      </div>
+      <div class = 'choiceText foodText'>
+        <h1>
+          Title
+        </h1>
+        <p>
+          Section talking about the activity/food/drink/beach, etc
+        </p>
+      </div>
+    </div>
+    End of of the current div. just commenting out to avoid noise.
+
+   -->
+
+
+
+      <!-- <h1>Exploration and Activites</h1>
 
       <div class = 'discoverItem discoverHaleakala image discoverImage' id = 'haleakala'>
         <a href = 'https://www.nps.gov/hale/index.htm' target = '_blank'><img class = 'haleakala' src = './images/location/haleakala_crater.jpg'>
@@ -151,101 +336,6 @@
           <p class = 'caption'>Amazing Food Options</p>
         </a>
       </div>
-    </div>
-
-    <!-- <div class = 'discoverItem discoverHaleakala image discoverImage' id = 'haleakala'>
-      <a href = 'https://www.nps.gov/hale/index.htm' target = '_blank'><img class = 'haleakala' src = './images/location/haleakala_crater.jpg'>
-        <div class = 'overlay haleakalaOverlay' id = 'haleakalaOverlay'>
-          Haleakala National Park
-          <br>
-          Makawao
-        </div>
-        <p class = 'caption'>Haleakala National Park | Makawao</p>
-      </a>
-    </div> -->
-
-    <!-- <div class = 'discoverItem discoverHanaHwy image discoverImage' id = 'HanaHwy'>
-      <a href = 'Hana_Highway' target = '_blank'><img class = 'hanaHwy' src = './images/location/waterfallStock.jpg'>
-        <div class = 'overlay hanaHwyOverlay' id = 'hanaHwyOverlay'>
-          The Road to Hana
-          <br>
-          Hana Hwy
-        </div>
-        <p class = 'caption'>The Road to Hana | Hana Hwy</p>
-      </a>
-    </div> -->
-
-
-    <!-- <div class = 'discoverItem discoverBamboo image discoverImage' id = 'bamboo'>
-      <a href = 'Bamboo_Forest' target = '_blank'><img class = 'bamboo' src = './images/location/bamboo.jpg'>
-        <div class = 'overlay bambooOverlay' id = 'bambooOverlay'>
-          Bamboo Forest (Na’ili’ili Haele)
-          <br>
-          Hana Hwy
-        </div>
-        <p class = 'caption'>Bamboo Forest (Na’ili’ili Haele) | Hana Hwy</p>
-      </a>
-    </div> -->
-
-
-    <!-- <div class = 'discoverItem discoverRedSand image discoverImage' id = 'redSand'>
-      <a href = 'Kaihalulu_Beach' target = '_blank'><img class = 'redSand' src = './images/location/redSand(patrick shyu).jpg'>
-        <div class = 'overlay redSandOverlay' id = 'redSandOverlay'>
-          Koki Beach Park (Kaihalulu Beach)
-          <br>
-          Hana
-        </div>
-        <p class = 'caption'>Koki Beach Park (Kaihalulu Beach) | Hana</p>
-      </a>
-    </div> -->
-
-    <!-- <div class = 'discoverItem discoverHana image discoverImage' id = 'hana'>
-      <a href = 'Hana' target = '_blank'><img class = 'hana' src = './images/location/Hana.jpg'>
-        <div class = 'overlay hanaOverlay' id = 'hanaOverlay'>
-          They City of Hana
-          <br>
-          Hana
-        </div>
-        <p class = 'caption'>The City of Hana | Hana</p>
-      </a>
-    </div> -->
-
-    <!-- <div class = 'discoverItem discoverHookipa image discoverImage' id = 'hana'>
-      <a href = 'Hookipa_Beach' target = '_blank'><img class = 'hookipa' src = './images/location/turtle.jpg'>
-        <div class = 'overlay hookipaOverlay' id = 'hookipaOverlay'>
-          Ho‘okipa Beach
-          <br>
-          Haiku
-        </div>
-        <p class = 'caption'>Ho‘okipa Beach | Haiku</p>
-      </a>
-    </div> -->
-
-    <!-- <div class = 'discoverItem discoverPaia image discoverImage' id = 'paia'>
-      <a href = 'Paia' target = '_blank'><img class = 'paia' src = './images/location/paia.jpg'>
-        <div class = 'overlay hookipaOverlay' id = 'hookipaOverlay'>
-          Pa'ia
-        </div>
-        <p class = 'caption'>Pa'ia</p>
-      </a>
-    </div> -->
-
-    <!-- <div class = 'discoverItem discoverMakawao image discoverImage' id = 'makawao'>
-      <a href = 'Makawao' target = '_blank'><img class = 'makawao' src = './images/location/makawao.jpg'>
-        <div class = 'overlay makawaoOverlay' id = 'makawaoOverlay'>
-          Makawao
-        </div>
-        <p class = 'caption'>Makawao</p>
-      </a>
-    </div> -->
-
-    <!-- <div class = 'discoverItem discoverFood image discoverImage' id = 'food'>
-      <a href = 'Maui_Food' target = '_blank'><img class = 'food' src = './images/location/spam.jpg'>
-        <div class = 'overlay foodOverlay' id = 'foodOverlay'>
-          Amazing Food and Drink
-        </div>
-        <p class = 'caption'>Amazing Food Options</p>
-      </a>
     </div> -->
 
 
@@ -278,7 +368,7 @@
 
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src = "./home.js"></script>
+    <script src = "./location.js"></script>
   </body>
 
   </html>

@@ -18,14 +18,18 @@ function showSlides(n){
   if (n > slides.length) {slideIndex = 1};
   if (n < 1) {slideIndex = slides.length};
   for (x = 0; x < slides.length; x++){
-    slides[x].style.display = 'none';
+    // slides[x].style.display = 'none';
+    $(slides[x]).hide();
   }
   for (x = 0; x < dots.length; x++){
     dots[x].classList.remove('active');
   }
-  slides[slideIndex-1].style.display = 'flex';
+  console.log('slidesIndex: ', slides[slideIndex-1]);
+  $(slides[slideIndex-1]).fadeIn(500);
+  // slides[slideIndex-1].style.display = 'flex';
   dots[slideIndex-1].classList.add('active');
 }
+
 
 //AboutPage mouseover and mouseleave events.
 $('.aboutTrigger').mouseover(function(){
@@ -79,3 +83,7 @@ $('.amenitiesText').mouseleave(function(){
     'opacity':'0'
   });
 });
+
+function choiceSelection(id){
+
+}

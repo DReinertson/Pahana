@@ -1,5 +1,17 @@
 .heroBanner{
 }
+.separator{
+  display: flex;
+  width: 100%;
+  padding: 5% 0 10% 0;
+}
+.separator span{
+  height: 2px;
+  width: 40%;
+  margin: 0 auto;
+  background: white;
+}
+
 
 .aboutOwners{
   width: 80vw;
@@ -28,13 +40,12 @@
   border-bottom: 0.25px solid white;
 }
 
-.ownerImage img{
+/* .ownerImage img{
   width: 35vw;
   height: 27vw;
   object-fit: cover;
-  
-}
+} */
 
 .ownerText{
-  background: green;
+
 }

@@ -12,13 +12,261 @@ a{
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: white;
 }
-p{
+ul{
+  list-style-position: inside;
+}
+/*Text CSS*/
+
+.textCenter{
+  text-align: center;
+}
+.pageText, p{
   font-size: 1.2vw;
 }
-h1{
+.header1, h1{
+  font-size: 5vw;
+}
+.header2{
   font-size: 3vw;
 }
+.textWidth{
+  width: 30vw;
+}
+/*End Text CSS*/
+/*Display CSS*/
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.flexRow{
+  display: flex;
+}
+.flexCenter{
+  justify-content: center;
+  align-items: center;
+}
+.spaceAround{
+  justify-content: space-around;
+}
+.spaceBetween{
+  justify-content: space-between;
+}
+.justifyEnd{
+  justify-content: flex-end;
+}
+.flexColumnCenter{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.flexRowCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alignCenter{
+  align-items: Center;
+}
+.alignEnd{
+  align-items: flex-end;
+
+}
+.centerDiv{
+  margin: 0 auto;
+}
+.flexWrap{
+  flex-wrap: wrap;
+}
+/*Used to match width of container, whether it's to the body or to parent div*/
+.autoWidth{
+  width: auto;
+}
+.fullWidth{
+  width: 100%;
+}
+.threeQuarters{
+  width: 75%;
+}
+.halfWidth{
+  width: 50%;
+}
+.fortyWidth{
+  width: 40%;
+}
+.thrityPercent{
+  width: 30%;
+}
+.ninetyWidth{
+  width: 90%;
+}
+.oneToOne{
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+.green{
+  background: #54695A;
+}
+.gray{
+  background: #696969;
+}
+.verticalLine:after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40%;
+  right: -5.5%;
+  top: 0;
+  background: white;
+}
+.borderRight{
+  border-right: 1px solid white;
+}
+.line:after{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.25px solid white;
+}
+.shortLine:after{
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.25px solid white;
+}
+.fullLine:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.25px solid white;
+}
+
+.images:after {
+  content: "";
+  flex: 1 1 100%;
+  max-width: 30%;
+}
+.relative{
+  position: relative;
+}
+.background{
+  background: green;
+}
+/*To match images and text to the same height. Make it flush with each other*/
+.matchingHeight{
+  height: 30vw;
+}
+.fitCover{
+  object-fit: cover;
+}
+/*End Display CSS*/
+/*Accommodations*/
+.twentyfive{
+  width: 25%;
+  height: auto;
+}
+.thirty{
+  /* width: 30vw; */
+  /* height: 30vw; */
+  width: 33vw;
+  height: 25vw;
+  object-fit: cover;
+}
+.positionLeft{
+  object-position: 25% 0;
+}
+/*End Accommodations*/
+/*Margin and Padding*/
+.twoHorizontalMargin{
+  margin: 0 2%;
+}
+.twoVerticalMargin{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.fiveVerticalMargin{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.twoMarginBottom{
+  margin-bottom: 2%;
+}
+.twoMarginTop{
+  margin-top: 2%;
+}
+.twoVerticalPadding{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.twoMarginLeft{
+  margin-left: 2%;
+}
+.twoMarginRight{
+  margin-right: 2%;
+}
+.fiveVerticalPadding{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.twoPaddingBottom{
+  padding-bottom: 2%;
+}
+.twoHorizontalPadding{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.twoPaddingTop{
+  padding-top: 2%;
+}
+.fivePaddingBottom{
+  padding-bottom: 5%;
+}
+.onePadding{
+  padding: 1%;
+}
+/*-----------Activities CSS---------------*/
+.threeMarginLeft{
+  margin-left: 3%;
+}
+.threeMarginRight{
+  margin-right: 3%;
+}
+.matchingImage{
+  height: 24vw;
+}
+.activityHeight{
+  height: 50vw;
+}
+/*-----------End Activities CSS---------------*/
+/*End Margin and Padding*/
+/*Button Styling*/
+.buttonWidth{
+  width: 15vw;
+}
+.largeButtonWidth{
+  width: auto;
+}
+.buttonBackground{
+  background-image: url('./images/sand_gray.jpg');
+  border: 2px solid white;
+  color: white;
+}
+/*End Button Styling*/
+
+
+
 .parallax{
   height: 90%;
 
@@ -262,14 +510,13 @@ h1{
 .pahanaImageContainer{
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 75vw;
   margin: 0 auto;
   position: relative;
-  background: green;
 }
 .containerItem{
   display: flex;
-  height: 50vw;
+  height: 40vw;
 }
 .itemImage, .itemText{
   width: 50%;
@@ -351,10 +598,10 @@ h1{
 }
 .prev{
   /* left: -5%; */
-  left: -7vw;
+  left: -10vw;
 }
 .next{
-  right: -7vw;
+  right: -10vw;
   /* right: -5%; */
 }
 
@@ -382,8 +629,8 @@ h1{
 /*-----------Pahana Section-----------*/
 /*-----------CTA Section----------*/
 .CTA{
-  height: 10vw;
-  height: 20vh;
+  /* height: 10vw;
+  height: 20vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -392,6 +639,14 @@ h1{
   margin-top: 20vh;
   background: #54695A;
   color: white;
+  padding-top: 3%;
+}
+.CTA:after{
+  content: "";
+  background-color: white;
+  width: 30%;
+  margin: 3% auto;
+  height: 2px;
 }
 .CTA form{
   display: flex;
@@ -404,9 +659,22 @@ h1{
 /*-----------End CTA Section----------*/
 /*-----------Footer-----------*/
 .footer{
-  height: 10vw;
-  height: 15vh;
+  /* height: 10vw;
+  height: 15vh; */
   background: #54695A;
+  margin-top: auto;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: flex-end; */
+  justify-content: space-around;
+  padding-bottom: 1%;
+}
+.footerItem{
+  width: 40%;
+}
+.socialMedia{
+  display: flex;
+  justify-content: flex-end;
 }
 /*-----------End Footer-----------*/
 /*-----------Add-on classes------------*/
