@@ -7,7 +7,7 @@
   padding: 3% 0;
 }
 
-.locationContainer{
+/* .locationContainer{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -35,9 +35,108 @@
   bottom: 0;
   left: 0;
   border-bottom: 0.25px solid white;
-}
+}*/
 
 .discoverImage{
   width: 25vw;
   height: 18vw;
+}
+.transition {
+  transition: .7s;
+}
+/*CSS for Netflix sytled scroll through images*/
+
+.height{
+  height: 25vw;
+}
+.carousel{
+  padding: 0 4vw;
+}
+#explorationCarousel{
+}
+/* .holder:last-child:after{
+  content: '';
+  width: 4vw;
+  height: 100%;
+  position: absolute;
+} */
+
+
+.holder{
+  width: 25vw;
+  height: 20vw;
+  position: relative;
+  transition: all 0.2s ease;
+  /* flex-grow: 0; */
+  flex-shrink: 0;
+  margin: 0 5px;
+}
+.holder:first-child{
+  margin-left: 0;
+}
+
+.holder:last-child:after{
+  content: '';
+  width: calc(9vw + 5px);
+  height: 100%;
+  position: absolute;
+}
+.holder:last-child:hover::after{
+}
+.holder:hover{
+  /* width: 30vw;
+  height: 25vw; */
+  /* flex-grow: 1;*/
+  margin: 0 3vw;
+  transform: scale(1.2);
+}
+
+.holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.holder a{
+  width: 100%;
+  height: 100%;
+}
+.overflowScroll{
+  overflow-x: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.arrows{
+  height: 25vw;
+  position: absolute;
+  width: 100%;
+}
+.arrow{
+  color: white;
+  font-size: 4vw;
+  background: rgba(25,25,25,0.5);
+  height: 10vw;
+  width: 4vw;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+}
+.left{
+  left: 0;
+}
+.right{
+  right: 0;
+}
+.fourMarginLeft{
+  left: 4vw;
+}
+.fourPaddingLeft{
+  padding-left: 4vw;
+}
+.fourPaddingRight{
+  padding-right: 4vw;
+}
+.mambos{
+  object-position: 0 90%;
 }

@@ -1,12 +1,12 @@
-#haleakalaHero{
-  background-image: url('./Pahana4.jpg');
+.heroBanner{
+  height: 80%;
+  background-position: center;
 }
-#hanaHero{
-  background-image: url('./images/location/blackSand.jpg');
+
+.hidden{
+  display: none;
 }
-#bambooHero{
-  background-image: url('./images/location/bamboo.jpg');
-}
-#paiaHero{
-  background-image: url('./images/location/paia.jpg');
+
+.exploreText p{
+  margin-bottom: 5%;
 }
